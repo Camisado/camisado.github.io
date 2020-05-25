@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: http://yuryhaichuk.me/sitemap.xml
+Host: yuryhaichuk.me
