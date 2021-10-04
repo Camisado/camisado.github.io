@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: http://yuryhaichuk.me/sitemap.xml
-Host: yuryhaichuk.me
+Sitemap: http://yury-haichuk.me/sitemap.xml
+Host: yury-haichuk.me
