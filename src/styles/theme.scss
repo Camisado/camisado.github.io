@@ -1,0 +1,32 @@
+@use "sass:map";
+
+$primary: (
+  background-color: #252525,
+  text-color: #ebebeb,
+  accent-color: #00fed0,
+);
+
+$secondary: (
+  background-color: red,
+  text-color: green,
+  accent-color: blue,
+);
+
+
+@mixin apply($isGlobal: false) {
+  @if $isGlobal {
+    .theme-primary {
+      @content($primary);
+    }
+  }
+
+  @if not $isGlobal {
+    :global(.theme-primary) {
+      @content($primary);
+    }
+  }
+
+  //:global(.theme-secondary) {
+  //  @content($secondary);
+  //}
+}

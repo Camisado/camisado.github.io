@@ -1,0 +1,17 @@
+{
+  "contactInfo": "Contact info",
+  "summary": "Summary",
+  "technicalSkills": "Technical skills",
+  "education": "Education",
+  "professionalExperience": "Professional experience",
+  "experienceRecord": {
+    "position": "Position"
+  },
+  "project": {
+    "label": "Project",
+    "technologies": "Technologies",
+    "responsibilities": "Responsibilities",
+    "showMore": "Show more...",
+    "showLess": "Show less"
+  }
+}

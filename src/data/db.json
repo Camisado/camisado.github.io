@@ -1,0 +1,305 @@
+{
+  "header": {
+    "title": "Yury Haichuk",
+    "subtitle": "Frontend developer"
+  },
+  "main": {
+    "personalDetails": {
+      "contactInfo": [
+        {
+          "name": "linkedIn",
+          "label": "linkedin.com/in/yhaichuk",
+          "href": "https://www.linkedin.com/in/yhaichuk"
+        },
+        {
+          "name": "email",
+          "label": "yhaichuk@gmail.com",
+          "href": "mailto:yhaichuk@gmail.com"
+        },
+        {
+          "name": "facebook",
+          "label": "facebook.com/CamisadoNT",
+          "href": "https://www.facebook.com/CamisadoNT"
+        }
+      ],
+      "summary": [
+        "More than 5 years of experience in web programming and front-end development",
+        "Strong experience in JavaScript",
+        "More than 1 years of experience in development using Java",
+        "Have experience to develop front-end and back-end sides of application, so understand how both sides communicates with each other",
+        "Able to effectively solve the tasks in time, quickly learn new technologies, is able to quickly navigate and adapt in big projects"
+      ],
+      "techSkills": [
+        {
+          "title": "Programming languages and technologies",
+          "description": "JavaScript, TypeScript, HTML/HTML5, CSS2/3, Ajax, Java SE, Java EE, Java for Android Development"
+        },
+        {
+          "title": "Operating Systems",
+          "description": "Windows, Linux, MacOS"
+        },
+        {
+          "title": "Programming practices",
+          "description": "OOP design principles and patterns, functional programming principles, UI/UX design, code refactoring, performance profiling and tuning"
+        },
+        {
+          "title": "Frameworks and Libraries",
+          "description": "ReactJS, Redux, AngularJS, Angular 2+, Angular Material, Angular UI Grid, Cordova, Ionic, Node.js, Express, Sass/Less, Bower, Webpack, Material UI, Flexbox, Bootstrap, Foundation, Moment.js"
+        },
+        {
+          "title": "Development Environments and Tools",
+          "description": "Intellij IDEA, WebStorm, Visual Studio, Sublime Text"
+        },
+        {
+          "title": "Source Control Systems",
+          "description": "Git"
+        },
+        {
+          "title": "Databases",
+          "description": "MongoDB, SQL"
+        }
+      ],
+      "education": [
+        {
+          "title": "Bachelor of Science (BSc) - Applied Mathematics",
+          "place": "Vitebski Dzjaržauny Universitet imja P.M. Mašerov",
+          "duration": "2010 - 2015"
+        }
+      ]
+    },
+    "experience": [
+      {
+        "company": {
+          "name": "EPAM Systems",
+          "workDuration": "12.2020 - present"
+        },
+        "position": "Lead frontend developer",
+        "projects": [
+          {
+            "name": "Customer Success Platform - Thomson Reuters",
+            "description": [
+              "The Customer Experience Platform is a react-based single page application with a Redux store that provides customers with a My Account experience.",
+              "In the platform, customers can view and pay their bills, manage users, submit and check on support tickets, and more."
+            ],
+            "responsibilities": [
+              "Implementing new features",
+              "Maintenance for stable work",
+              "Keep apps with good performance",
+              "Preparation codebase for a following rework",
+              "Scalability and refactoring",
+              "Unit, integration testing",
+              "Bugfix"
+            ],
+            "technologies": [
+              "ReactJS",
+              "Redux",
+              "TypeScript",
+              "3rd-party libraries"
+            ]
+          }
+        ]
+      },
+      {
+        "company": {
+          "name": "CloudCall",
+          "workDuration": "03.2020 - 12.2020"
+        },
+        "position": "Senior frontend developer",
+        "projects": [
+          {
+            "name": "CloudCall Unified Communications for CRM",
+            "description": [
+              "CloudCall is the voice and communication system for sales and recruitment teams. It has strong, lasting relationships with leading CRM systems and business software providers to offer complete unified communications technology.",
+              "The plugin allows recruiters and salespeople without leaving their CRM or ATS fly through tasks with click-to-call, capture data with integrated notes and automatic call recording, view relevant caller notes and details through inbound caller notifications, and so on."
+            ],
+            "responsibilities": [
+              "Implementing new features for crm plugin",
+              "Maintenance for stable work",
+              "Keep apps with good performance",
+              "Preparation codebase for a following rework",
+              "Scalability and refactoring",
+              "Unit, integration testing",
+              "Bugfix"
+            ],
+            "technologies": [
+              "AngularJS",
+              "ReactJS",
+              "JavaScript",
+              "TypeScript",
+              "3rd-party libraries"
+            ]
+          }
+        ]
+      },
+      {
+        "company": {
+          "name": "Exp(capital)",
+          "workDuration": "08.2018 - 10.2019"
+        },
+        "position": "Senior frontend developer",
+        "projects": [
+          {
+            "name": "Capital.com",
+            "description": [
+              "Web-platform and hybrid mobile app for cfd trading.",
+              "CFD trading enables you to speculate on the rising or falling prices of fast-moving global financial markets."
+            ],
+            "responsibilities": [
+              "Implementing new features for web-platform / mobile app",
+              "Maintenance for stable work",
+              "Keep apps with good performance",
+              "Scalability and refactoring",
+              "Bugfix"
+            ],
+            "technologies": [
+              "Angular5",
+              "TypeScript",
+              "Ionic3",
+              "3rd-party libraries"
+            ]
+          },
+          {
+            "name": "Currency.com",
+            "description": [
+              "Web-platform and hybrid mobile app for crypto trading.",
+              "Crypto trading works on tokenized security exchange platform, which make possible cryptocurrency investment by enabling anyone to trade financial markets without putting their crypto holdings under price pressure or moving to fiat."
+            ],
+            "responsibilities": [
+              "Implementing new features for web-platform / mobile app",
+              "Maintenance for stable work",
+              "Keep apps with good performance",
+              "Scalability and refactoring",
+              "Bugfix"
+            ],
+            "technologies": [
+              "Angular5",
+              "TypeScript",
+              "Ionic3",
+              "3rd-party libraries"
+            ]
+          }
+        ]
+      },
+      {
+        "company": {
+          "name": "ScienceSoft",
+          "workDuration": "08.2017 - 08.2018"
+        },
+        "position": "Frontend developer",
+        "projects": [
+          {
+            "name": "Private airline-company application",
+            "description": "Web/mobile application for private airline-company, which manages booking flights for customers, booking maintenance for company and admin panel for managing price-rules.",
+            "responsibilities": [
+              "Developing architecture of the application",
+              "Implementing separate views",
+              "Implementing features across entire the app",
+              "Updating the models of data and mapping which helps to transfer data between different modules of the app",
+              "Scalability and refactoring",
+              "Bugfix"
+            ],
+            "technologies": [
+              "ReactJS",
+              "Redux",
+              "ES6",
+              "Material Design UI",
+              "3rd-party libraries"
+            ]
+          },
+          {
+            "name": "Internet provider task-management application",
+            "description": "Web/mobile app that manages with a lifecycle of tickets for technicians. Tickets have different statuses and can be observed by user and technicians.",
+            "responsibilities": [
+              "Developing separate ReactJS component for reusing them across all the app",
+              "Updating the models of data and mapping which help to transfer data between different modules of the application",
+              "Scalability and refactoring",
+              "Bugfix"
+            ],
+            "technologies": [
+              "ReactJS",
+              "Redux",
+              "TypeScript",
+              "Bootstrap",
+              "3rd-party libraries"
+            ]
+          },
+          {
+            "name": "Connected Car App",
+            "description": "Hybrid mobile app that helps a user to get some statistics about his car’s state, works with notifications, remote control, navigation.",
+            "responsibilities": [
+              "Creating app screens for every particular feature, which included developing a structure of the application, developing basic react components for reuse, applying existed design to application",
+              "Performance issues",
+              "Scalability and refactoring",
+              "Bugfix"
+            ],
+            "technologies": [
+              "ReactJS",
+              "Redux",
+              "ES6",
+              "Flexbox",
+              "3rd-party libraries"
+            ]
+          }
+        ]
+      },
+      {
+        "company": {
+          "type": "business-trip",
+          "name": "Exadel Inc. → Microsoft Corp.",
+          "from": "Exadel Inc.",
+          "to": "Microsoft Corp.",
+          "workDuration": "10.2016 - 02.2017"
+        },
+        "position": "Software Engineer",
+        "projects": [
+          {
+            "name": "Dynamics 365 CRM",
+            "description": "Huge ERP/CRM customer relationship management system focuses mainly on Sales, Marketing, and Service (help desk) sectors. The main goal is to provide highly configurable system to manage business processes and workflows inside companies.",
+            "responsibilities": [
+              "Web-components and web-primitives",
+              "Transfer features from Script# to Typescript",
+              "HTML markups for components",
+              "Scalability and refactoring",
+              "Bugfix"
+            ],
+            "technologies": [
+              "ReactJS",
+              "Redux",
+              "TypeScript",
+              "Script#"
+            ]
+          }
+        ]
+      },
+      {
+        "company": {
+          "name": "Exadel Inc.",
+          "workDuration": "10.2014 - 08.2017"
+        },
+        "position": "Frontend developer",
+        "projects": [
+          {
+            "name": "Global Healthcare Exchange",
+            "description": [
+              "Web-platform that allows suppliers, providers and GPO collaborate and trade.",
+              "It empowering healthcare organizations to maximize industry savings using cloud-based supply chain technology exchange platform, solutions, analytics and services."
+            ],
+            "responsibilities": [
+              "Web-components: isolated parts of the app giving access to one aspect",
+              "Developing of separate app pages with its own logic",
+              "HTML markups for numerous parts of the app",
+              "Scalability and refactoring",
+              "Bugfix"
+            ],
+            "technologies": [
+              "AngularJS",
+              "ES5/ES6",
+              "Bootstrap",
+              "3rd-party libraries"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
