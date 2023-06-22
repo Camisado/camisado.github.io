@@ -9,7 +9,7 @@
   {#each db as skill}
     <dl>
       <dt>{skill.title}</dt>
-      <dd>{skill.description}</dd>
+      <dd>{skill.description.join(', ')}</dd>
     </dl>
   {/each}
 </section>

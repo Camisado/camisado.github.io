@@ -27,39 +27,94 @@
         }
       ],
       "summary": [
-        "More than 7 years of experience in web programming and front-end development",
-        "Strong experience in JavaScript",
-        "Have experience to develop front-end and back-end sides of application, so understand how both sides communicates with each other",
-        "Able to effectively solve the tasks in time, quickly learn new technologies, is able to quickly navigate and adapt in big projects"
+        "More than 7 years of experience in frontend development, driving successful project deliveries and meeting client requirements",
+        "Have ability to architect frontend solutions, design intuitive user interfaces, and optimize web performance for enhanced user experience",
+        "Skilled in responsive web design, ensuring seamless user experiences across various devices and screen sizes",
+        "Experience collaborating with cross-functional teams, including designers, backend developers, and product managers, to translate requirements into functional frontend solutions",
+        "Strong problem-solving and debugging skills, with the ability to quickly identify and resolve frontend issues to maintain project timelines",
+        "Excellent communication abilities, fostering a collaborative environment within the frontend team, including technical guidance, and mentoring junior developers"
       ],
       "techSkills": [
         {
-          "title": "Programming languages and technologies",
-          "description": "JavaScript, TypeScript, HTML/HTML5, CSS2/3, Ajax, Java SE, Java EE, Java for Android Development"
-        },
-        {
-          "title": "Operating Systems",
-          "description": "Windows, Linux, MacOS"
-        },
-        {
-          "title": "Programming practices",
-          "description": "OOP design principles and patterns, functional programming principles, UI/UX design, code refactoring, performance profiling and tuning"
+          "title": "Core technologies",
+          "description": [
+            "JavaScript (ES5+)",
+            "TypeScript",
+            "HTML5",
+            "CSS3",
+            "DOM",
+            "WebAPI",
+            "RESTful API"
+          ]
         },
         {
           "title": "Frameworks and Libraries",
-          "description": "ReactJS, Redux, AngularJS, Angular 2+, Angular Material, Angular UI Grid, Cordova, Ionic, Node.js, Express, Sass/Less, Bower, Webpack, Material UI, Flexbox, Bootstrap, Foundation, Moment.js"
+          "description": [
+            "React.js",
+            "Redux",
+            "Angular",
+            "Vue.js",
+            "Svelte",
+            "Ionic",
+            "Node.js",
+            "Express",
+            "Sass/Less",
+            "Material UI",
+            "Bootstrap",
+            "Foundation",
+            "Ant.Design",
+            "Flexbox",
+            "Jest",
+            "Testing library",
+            "Enzyme"
+          ]
+        },
+        {
+          "title": "Programming practices",
+          "description": [
+            "Component-based architecture",
+            "OOP design principles and patterns",
+            "Functional programming principles",
+            "UI/UX design",
+            "Code refactoring",
+            "Performance profiling and tuning",
+            "Code optimization techniques"
+          ]
+        },
+        {
+          "title": "Build tools and package managers",
+          "description": [
+            "Webpack",
+            "Vite",
+            "NPM/Yarn"
+          ]
+        },
+        {
+          "title": "Operating Systems",
+          "description": [
+            "MacOS",
+            "Windows",
+            "Linux"
+          ]
         },
         {
           "title": "Development Environments and Tools",
-          "description": "Intellij IDEA, WebStorm, Visual Studio, Sublime Text"
+          "description": [
+            "WebStorm",
+            "VS Code",
+            "Sublime Text"
+          ]
         },
         {
           "title": "Source Control Systems",
-          "description": "Git"
+          "description": ["Git"]
         },
         {
           "title": "Databases",
-          "description": "MongoDB, SQL"
+          "description": [
+            "MongoDB",
+            "SQL"
+          ]
         }
       ],
       "education": [
