@@ -1,0 +1,77 @@
+@use 'sass:map';
+@use '@/styles/theme';
+@use '@/styles/breakpoints';
+@use '@/styles/mixins';
+
+.icon {
+  display: inline-flex;
+
+  @include breakpoints.from(xs) {
+    width: 18px;
+    height: 18px;
+  }
+
+  @include breakpoints.from(sm) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @include theme.apply(false) using($theme) {
+    &-save {
+      @include mixins.masked-svg(
+          url('@/assets/save.svg'),
+          map.get($theme, 'accent-color'),
+      );
+    }
+
+    &-linkedIn {
+      @include mixins.masked-svg(
+          url('@/assets/linkedIn.svg'),
+          map.get($theme, 'accent-color'),
+      )
+    }
+
+    &-email {
+      @include mixins.masked-svg(
+          url('@/assets/email.svg'),
+          map.get($theme, 'accent-color'),
+      )
+    }
+
+    &-facebook {
+      @include mixins.masked-svg(
+          url('@/assets/facebook.svg'),
+          map.get($theme, 'accent-color'),
+      )
+    }
+
+    &-plane {
+      @include mixins.masked-svg(
+          url('@/assets/plane.svg'),
+          map.get($theme, 'accent-color'),
+      );
+    }
+
+    &-scissors {
+      @include mixins.masked-svg(
+          url('@/assets/scissors.svg'),
+          map.get($theme, 'accent-color'),
+      );
+    }
+
+    &-timeline-dot {
+      @include mixins.masked-svg(
+          url('@/assets/timeline-dot-stroke.svg'),
+          map.get($theme, 'accent-color'),
+      );
+    }
+
+    &-badger {
+      @include mixins.masked-svg(
+          url('@/assets/badger.svg'),
+          map.get($theme, 'accent-color'),
+      );
+    }
+  }
+}
+

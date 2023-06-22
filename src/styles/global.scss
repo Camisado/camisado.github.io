@@ -1,0 +1,75 @@
+@use 'sass:map';
+@use '@/styles/theme';
+@use '@/styles/breakpoints';
+@import url('https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,700,800&display=swap');
+
+.title {
+  @include theme.apply(false) using($theme) {
+    color: map.get($theme, 'accent-color');
+  }
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include breakpoints.from(xs) {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @include breakpoints.from(sm) {
+    margin-bottom: 28px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+a {
+  text-decoration: unset;
+
+  &:link,
+  &:visited {
+    @include theme.apply(false) using($theme) {
+      color: map.get($theme, 'text-color');
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    @include theme.apply(false) using($theme) {
+      color: map.get($theme, 'accent-color');
+    }
+    text-decoration: underline;
+  }
+}
+
+.container {
+  max-width: breakpoints.$breakpoint-xxl;
+  margin: auto;
+
+  @include breakpoints.from(xs) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @include breakpoints.from(sm) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.label {
+  margin-right: 5px;
+
+  &-colon {
+    &:after {
+      content: ':';
+    }
+  }
+}
+
+.value {
+  font-weight: 500;
+}

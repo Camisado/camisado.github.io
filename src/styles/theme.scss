@@ -1,0 +1,36 @@
+@use "sass:map";
+
+$primary: (
+  background-color: #252525,
+  text-color: #ebebeb,
+  accent-color: #00fed0,
+);
+
+$print: (
+  background-color: white,
+  text-color: black,
+  accent-color: black,
+);
+
+
+@mixin apply($isComponent: true) {
+  @if $isComponent {
+    :global(.theme-primary) & {
+      @content($primary);
+
+      @media print {
+        @content($print);
+      }
+    }
+  }
+
+  @if not $isComponent {
+    .theme-primary & {
+      @content($primary);
+
+      @media print {
+        @content($print);
+      }
+    }
+  }
+}
