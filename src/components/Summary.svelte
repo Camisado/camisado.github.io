@@ -18,41 +18,41 @@
   @use '@/styles/theme';
   @use '@/styles/breakpoints';
 
-  @include theme.apply() using ($theme) {
-    section.summary {
-      ul {
-        padding-left: 20px;
-        list-style: none;
+  section.summary {
+    ul {
+      padding-left: 20px;
+      list-style: none;
 
-        li {
-          &::before {
-            content: "\2022";
+      li {
+        &::before {
+          content: "\2022";
+          @include theme.apply using ($theme) {
             color: map.get($theme, 'accent-color');
-            font-weight: 800;
-            display: inline-block;
-            width: 18px;
-            margin-left: -18px;
-            line-height: 18px;
           }
+          font-weight: 800;
+          display: inline-block;
+          width: 18px;
+          margin-left: -18px;
+          line-height: 18px;
+        }
 
-          @include breakpoints.from(xs) {
-            margin-bottom: 14px;
+        @include breakpoints.from(xs) {
+          margin-bottom: 14px;
 
-            &::before {
-              font-size: 18px;
-            }
-          }
-
-          @include breakpoints.from(sm) {
-            margin-bottom: 20px;
-
-            &::before {
-              font-size: 25px;
-            }
+          &::before {
+            font-size: 18px;
           }
         }
 
+        @include breakpoints.from(sm) {
+          margin-bottom: 20px;
+
+          &::before {
+            font-size: 25px;
+          }
+        }
       }
+
     }
   }
 </style>

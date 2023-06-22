@@ -6,27 +6,31 @@ $primary: (
   accent-color: #00fed0,
 );
 
-$secondary: (
-  background-color: red,
-  text-color: green,
-  accent-color: blue,
+$print: (
+  background-color: white,
+  text-color: black,
+  accent-color: black,
 );
 
 
-@mixin apply($isGlobal: false) {
-  @if $isGlobal {
-    .theme-primary {
+@mixin apply($isComponent: true) {
+  @if $isComponent {
+    :global(.theme-primary) & {
       @content($primary);
+
+      @media print {
+        @content($print);
+      }
     }
   }
 
-  @if not $isGlobal {
-    :global(.theme-primary) {
+  @if not $isComponent {
+    .theme-primary & {
       @content($primary);
+
+      @media print {
+        @content($print);
+      }
     }
   }
-
-  //:global(.theme-secondary) {
-  //  @content($secondary);
-  //}
 }

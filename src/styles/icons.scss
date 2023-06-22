@@ -1,74 +1,74 @@
 @use 'sass:map';
 @use '@/styles/theme';
 @use '@/styles/breakpoints';
+@use '@/styles/mixins';
 
-@mixin masked-svg($svg, $color) {
-  -webkit-mask: $svg no-repeat;
-  mask: $svg no-repeat;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  background-color: $color;
-}
+.icon {
+  display: inline-flex;
 
-@include theme.apply(true) using($theme) {
-  .icon {
-    display: inline-flex;
+  @include breakpoints.from(xs) {
+    width: 18px;
+    height: 18px;
+  }
 
-    @include breakpoints.from(xs) {
-      width: 18px;
-      height: 18px;
-    }
+  @include breakpoints.from(sm) {
+    width: 24px;
+    height: 24px;
+  }
 
-    @include breakpoints.from(sm) {
-      width: 24px;
-      height: 24px;
-    }
-
+  @include theme.apply(false) using($theme) {
     &-save {
-      @include masked-svg(
+      @include mixins.masked-svg(
           url('@/assets/save.svg'),
           map.get($theme, 'accent-color'),
       );
     }
 
     &-linkedIn {
-      @include masked-svg(
+      @include mixins.masked-svg(
           url('@/assets/linkedIn.svg'),
           map.get($theme, 'accent-color'),
       )
     }
 
     &-email {
-      @include masked-svg(
+      @include mixins.masked-svg(
           url('@/assets/email.svg'),
           map.get($theme, 'accent-color'),
       )
     }
 
     &-facebook {
-      @include masked-svg(
+      @include mixins.masked-svg(
           url('@/assets/facebook.svg'),
           map.get($theme, 'accent-color'),
       )
     }
 
     &-plane {
-      @include masked-svg(
+      @include mixins.masked-svg(
           url('@/assets/plane.svg'),
           map.get($theme, 'accent-color'),
       );
     }
 
     &-scissors {
-      @include masked-svg(
+      @include mixins.masked-svg(
           url('@/assets/scissors.svg'),
           map.get($theme, 'accent-color'),
       );
     }
 
     &-timeline-dot {
-      @include masked-svg(
+      @include mixins.masked-svg(
           url('@/assets/timeline-dot-stroke.svg'),
+          map.get($theme, 'accent-color'),
+      );
+    }
+
+    &-badger {
+      @include mixins.masked-svg(
+          url('@/assets/badger.svg'),
           map.get($theme, 'accent-color'),
       );
     }

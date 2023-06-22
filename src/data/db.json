@@ -7,6 +7,10 @@
     "personalDetails": {
       "contactInfo": [
         {
+          "name": "save",
+          "label": "Print/Save as PDF"
+        },
+        {
           "name": "linkedIn",
           "label": "linkedin.com/in/yhaichuk",
           "href": "https://www.linkedin.com/in/yhaichuk"
@@ -189,7 +193,9 @@
         "projects": [
           {
             "name": "Private airline-company application",
-            "description": "Web/mobile application for private airline-company, which manages booking flights for customers, booking maintenance for company and admin panel for managing price-rules.",
+            "description": [
+              "Web/mobile application for private airline-company, which manages booking flights for customers, booking maintenance for company and admin panel for managing price-rules."
+            ],
             "responsibilities": [
               "Developing architecture of the application",
               "Implementing separate views",
@@ -208,7 +214,9 @@
           },
           {
             "name": "Internet provider task-management application",
-            "description": "Web/mobile app that manages with a lifecycle of tickets for technicians. Tickets have different statuses and can be observed by user and technicians.",
+            "description": [
+              "Web/mobile app that manages with a lifecycle of tickets for technicians. Tickets have different statuses and can be observed by user and technicians."
+            ],
             "responsibilities": [
               "Developing separate ReactJS component for reusing them across all the app",
               "Updating the models of data and mapping which help to transfer data between different modules of the application",
@@ -225,7 +233,9 @@
           },
           {
             "name": "Connected Car App",
-            "description": "Hybrid mobile app that helps a user to get some statistics about his car’s state, works with notifications, remote control, navigation.",
+            "description": [
+              "Hybrid mobile app that helps a user to get some statistics about his car’s state, works with notifications, remote control, navigation."
+            ],
             "responsibilities": [
               "Creating app screens for every particular feature, which included developing a structure of the application, developing basic react components for reuse, applying existed design to application",
               "Performance issues",
@@ -254,7 +264,10 @@
         "projects": [
           {
             "name": "Dynamics 365 CRM",
-            "description": "Huge ERP/CRM customer relationship management system focuses mainly on Sales, Marketing, and Service (help desk) sectors. The main goal is to provide highly configurable system to manage business processes and workflows inside companies.",
+            "description": [
+              "Huge ERP/CRM customer relationship management system focuses mainly on Sales, Marketing, and Service (help desk) sectors.",
+              "The main goal is to provide highly configurable system to manage business processes and workflows inside companies."
+            ],
             "responsibilities": [
               "Web-components and web-primitives",
               "Transfer features from Script# to Typescript",

@@ -3,121 +3,73 @@
 @use '@/styles/breakpoints';
 @import url('https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,700,800&display=swap');
 
-@include theme.apply(true) using($theme) {
-  body {
-    font-family: 'Barlow', sans-serif;
-    font-style: normal;
-    font-weight: 300;
+.title {
+  @include theme.apply(false) using($theme) {
+    color: map.get($theme, 'accent-color');
+  }
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    background: map.get($theme, 'background-color');
-    color: map.get($theme, 'text-color');
+  @include breakpoints.from(xs) {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 22px;
+  }
 
-    @include breakpoints.from(xs) {
-      font-size: 14px;
-      line-height: 19px;
+  @include breakpoints.from(sm) {
+    margin-bottom: 28px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+a {
+  text-decoration: unset;
+
+  &:link,
+  &:visited {
+    @include theme.apply(false) using($theme) {
+      color: map.get($theme, 'text-color');
     }
-
-    @include breakpoints.from(sm) {
-      font-size: 18px;
-      line-height: 25px;
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    .title {
+  }
+  &:hover {
+    cursor: pointer;
+    @include theme.apply(false) using($theme) {
       color: map.get($theme, 'accent-color');
-      text-transform: uppercase;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      @include breakpoints.from(xs) {
-        margin-bottom: 16px;
-        font-size: 18px;
-        line-height: 22px;
-      }
-
-      @include breakpoints.from(sm) {
-        margin-bottom: 28px;
-        font-size: 26px;
-        line-height: 36px;
-      }
     }
+    text-decoration: underline;
+  }
+}
 
-    a {
-      text-decoration: unset;
+.container {
+  max-width: breakpoints.$breakpoint-xxl;
+  margin: auto;
 
-      &:link,
-      &:visited {
-        color: map.get($theme, 'text-color');
-      }
-      &:hover {
-        color: map.get($theme, 'accent-color');
-        text-decoration: underline;
-      }
-    }
+  @include breakpoints.from(xs) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-    .container {
-      max-width: breakpoints.$breakpoint-xxl;
-      margin: auto;
+  @include breakpoints.from(sm) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 
-      @include breakpoints.from(xs) {
-        padding-left: 16px;
-        padding-right: 16px;
-      }
+.label {
+  margin-right: 5px;
 
-      @include breakpoints.from(sm) {
-        padding-left: 60px;
-        padding-right: 60px;
-      }
-    }
-
-    .label {
-      margin-right: 5px;
-
-      &-colon {
-        &:after {
-          content: ':';
-        }
-      }
-    }
-
-    .value {
-      font-weight: 500;
+  &-colon {
+    &:after {
+      content: ':';
     }
   }
 }
 
-@mixin description-list() {
-  dl {
-    margin: 0;
-  }
-
-  dt {
-    font-weight: 500;
-  }
-
-  @include breakpoints.from(xs) {
-    dt {
-      margin-bottom: 6px;
-    }
-
-    dd {
-      margin: 0 0 14px 0;
-    }
-  }
-
-  @include breakpoints.from(sm) {
-    dt {
-      margin-bottom: 7px;
-    }
-
-    dd {
-      margin: 0 0 22px 0;
-    }
-  }
+.value {
+  font-weight: 500;
 }

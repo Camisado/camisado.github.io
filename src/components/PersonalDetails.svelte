@@ -19,23 +19,20 @@
 
   section.personal-details {
     @include breakpoints.from(xs) {
-      //width: 100%;
-
       :global(section) {
         margin-bottom: 36px;
       }
     }
 
     @include breakpoints.from(sm) {
-      //width: 100%;
-
       :global(section) {
         margin-bottom: 50px;
       }
     }
 
-    @include breakpoints.from(md) {
-      //flex: 4;
+    @media print {
+      page-break-after: always;
+      break-after: page;
     }
   }
 </style>

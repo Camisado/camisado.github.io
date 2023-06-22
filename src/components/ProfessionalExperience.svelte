@@ -20,63 +20,67 @@
 <style lang="scss">
   @use 'sass:map';
   @use '@/styles/theme';
-  @use '@/styles/icons';
   @use '@/styles/breakpoints';
-
+  @use '@/styles/mixins';
 
   @mixin timeline-dot($src, $color) {
     content: '';
-    @include icons.masked-svg($src, $color,);
+    @include mixins.masked-svg($src, $color,);
     position: absolute;
     top: 0;
 
     @include breakpoints.from(xs) {
-      width: 10px;
-      height: 10px;
-      left: -26px;
-      margin: 4px 0;
+      width: 12px;
+      height: 12px;
+      left: -27px;
+      margin: 3px 0;
     }
 
     @include breakpoints.from(sm) {
-      width: 12px;
-      height: 12px;
-      left: -37px;
-      margin: 7px 0;
+      width: 16px;
+      height: 16px;
+      left: -39px;
+      margin: 5px 0;
     }
   }
 
-  @include theme.apply using ($theme) {
-    section.professional-experience {
-      .timeline {
+  section.professional-experience {
+    .timeline {
+      @include theme.apply using ($theme) {
         border-left: 2px solid map.get($theme, 'accent-color');
-        margin-left: 5px;
+      }
+      margin-left: 5px;
 
-        &-item {
-          position: relative;
+      &-item {
+        position: relative;
 
-          &::before {
+        &::before {
+          @include theme.apply using ($theme) {
             @include timeline-dot(
                 url('@/assets/timeline-dot-stroke.svg'),
                 map.get($theme, 'accent-color'),
             );
           }
 
-          &::after {
+        }
+
+        &::after {
+          @include theme.apply using ($theme) {
             @include timeline-dot(
                 url('@/assets/timeline-dot-fill.svg'),
                 map.get($theme, 'background-color'),
             );
           }
+        }
 
-          @include breakpoints.from(xs) {
-            margin-left: 20px;
-            margin-bottom: 26px;
-          }
+        @include breakpoints.from(xs) {
+          margin-left: 20px;
+          margin-bottom: 26px;
+        }
 
-          @include breakpoints.from(sm) {
-            margin-left: 30px;
-            margin-bottom: 46px;
-          }
+        @include breakpoints.from(sm) {
+          margin-left: 30px;
+          margin-bottom: 46px;
         }
       }
     }

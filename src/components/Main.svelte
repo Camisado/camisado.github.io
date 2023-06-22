@@ -45,5 +45,15 @@
         margin-left: 30px;
       }
     }
+
+    @media print {
+      display: block;
+      padding-top: 0;
+
+      &__right-column {
+        flex: 8;
+        margin-left: 0;
+      }
+    }
   }
 </style>

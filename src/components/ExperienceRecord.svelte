@@ -39,119 +39,123 @@
 
 </article>
 
+
 <style lang="scss">
   @use 'sass:map';
-  @use '@/styles/breakpoints';
   @use '@/styles/theme';
-  @use '@/styles/global';
+  @use '@/styles/breakpoints';
 
-  @include theme.apply using ($theme) {
-    article.experience-record {
+  article.experience-record {
+    .company {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+
+      .name {
+        @include theme.apply using ($theme) {
+          color: map.get($theme, 'accent-color');
+        }
+        font-weight: 500;
+      }
+
+      .duration {
+        @include theme.apply using ($theme) {
+          color: map.get($theme, 'accent-color');
+        }
+        font-weight: 400;
+      }
+    }
+
+    div.delimiter {
+      display: flex;
+      align-items: center;
+
+      div.delimiter-line {
+        overflow: hidden;
+        position: relative;
+        height: 1px;
+        width: 100%;
+      }
+
+      div.delimiter-line::before {
+        opacity: 0.7;
+        content: '';
+        position: absolute;
+        @include theme.apply using ($theme) {
+          border: 5px dashed map.get($theme, 'accent-color');
+        }
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    @include breakpoints.from(xs) {
       .company {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: baseline;
+        margin-bottom: 12px;
 
         .name {
-          color: map.get($theme, 'accent-color');
-          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
         }
 
         .duration {
-          color: map.get($theme, 'accent-color');
-          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
         }
       }
 
-      div.delimiter {
-        display: flex;
-        align-items: center;
+      .position {
+        margin-bottom: 10px;
+      }
 
-        div.delimiter-line {
-          overflow: hidden;
-          position: relative;
-          height: 1px;
-          width: 100%;
+      .delimiter {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .icon {
+        width: 16px;
+        height: 16px;
+
+        &-plane {
+          margin: 0 8px;
+        }
+      }
+    }
+
+    @include breakpoints.from(sm) {
+      .company {
+        margin-bottom: 16px;
+
+        .name {
+          font-size: 22px;
+          line-height: 26px;
         }
 
-        div.delimiter-line::before {
-          opacity: 0.7;
-          content: '';
-          position: absolute;
-          border: 5px dashed map.get($theme, 'accent-color');
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
+        .duration {
+          font-size: 18px;
+          line-height: 25px;
         }
       }
 
-      @include breakpoints.from(xs) {
-        .company {
-          margin-bottom: 12px;
-
-          .name {
-            font-size: 16px;
-            line-height: 19px;
-          }
-
-          .duration {
-            font-size: 12px;
-            line-height: 14px;
-          }
-        }
-
-        .position {
-          margin-bottom: 10px;
-        }
-
-        .delimiter {
-          margin-top: 10px;
-          margin-bottom: 10px;
-        }
-
-        .icon {
-          width: 16px;
-          height: 16px;
-
-          &-plane {
-            margin: 0 8px;
-          }
-        }
+      .position {
+        margin-bottom: 14px;
       }
 
-      @include breakpoints.from(sm) {
-        .company {
-          margin-bottom: 16px;
+      .delimiter {
+        margin-top: 14px;
+        margin-bottom: 14px;
+      }
 
-          .name {
-            font-size: 22px;
-            line-height: 26px;
-          }
+      .icon {
+        width: 20px;
+        height: 20px;
 
-          .duration {
-            font-size: 18px;
-            line-height: 25px;
-          }
-        }
-
-        .position {
-          margin-bottom: 14px;
-        }
-
-        .delimiter {
-          margin-top: 14px;
-          margin-bottom: 14px;
-        }
-
-        .icon {
-          width: 20px;
-          height: 20px;
-
-          &-plane {
-            margin: 0 16px;
-          }
+        &-plane {
+          margin: 0 16px;
         }
       }
     }

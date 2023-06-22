@@ -19,9 +19,9 @@
 </section>
 
 <style lang="scss">
-  @use "@/styles/global";
+  @use "@/styles/mixins";
 
   section.education {
-    @include global.description-list();
+    @include mixins.description-list();
   }
 </style>

@@ -1,0 +1,47 @@
+@use '@/styles/breakpoints';
+
+@mixin description-list() {
+  dl {
+    margin: 0;
+
+    @media print {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  }
+
+  dt {
+    font-weight: 500;
+  }
+
+  @include breakpoints.from(xs) {
+    dt {
+      margin-bottom: 6px;
+    }
+
+    dd {
+      margin: 0 0 14px 0;
+    }
+  }
+
+  @include breakpoints.from(sm) {
+    dt {
+      margin-bottom: 7px;
+    }
+
+    dd {
+      margin: 0 0 22px 0;
+    }
+  }
+}
+
+@mixin masked-svg($svg, $color) {
+  -webkit-mask: $svg no-repeat;
+  mask: $svg no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color-adjust: exact;
+  background-color: $color;
+}

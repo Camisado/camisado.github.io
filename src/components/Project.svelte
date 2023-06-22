@@ -13,7 +13,9 @@
       <span class="value">{db.name}</span>
     </div>
     <div class="description">
-      {db.description}
+      {#each db.description as paragraph }
+        <p>{paragraph}</p>
+      {/each}
     </div>
     <div class="responsibilities read-more-target">
       <span class="label label-colon">{dictionary.project.responsibilities}</span>
@@ -39,66 +41,76 @@
   @use '@/styles/theme';
   @use '@/styles/breakpoints';
 
-  @include theme.apply using($theme) {
-    div.project {
-      .responsibilities > ul {
-        margin: 0;
-        padding-left: 20px;
-      }
+  div.project {
+    .responsibilities > ul {
+      margin: 0;
+      padding-left: 20px;
+    }
 
-      .read-more-state {
-        display: none;
+    .description {
+      p {
+        margin: 0 0 4px 0;
       }
+    }
 
+    .read-more-state {
+      display: none;
+    }
+
+    .read-more-target {
+      display: none;
+    }
+
+    .read-more-state:checked ~ .read-more-wrap .read-more-target {
+      display: inherit;
+    }
+
+    .read-more-state ~ .read-more-trigger::before {
+      content: attr(data-show-more-label);
+    }
+
+    .read-more-state:checked ~ .read-more-trigger::before {
+      content: attr(data-show-less-label);
+    }
+
+    .read-more-trigger {
+      cursor: pointer;
+      @include theme.apply using($theme) {
+        color: map.get($theme, 'accent-color');
+      }
+    }
+
+    @include breakpoints.from(xs) {
+      .name,
+      .description,
+      .responsibilities,
+      .technologies {
+        margin-bottom: 8px;
+      }
+    }
+
+    @include breakpoints.from(sm) {
+      .name,
+      .description,
+      .responsibilities,
+      .technologies {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media print {
       .read-more-target {
-        display: none;
-
-        //opacity: 0;
-        //visibility: hidden;
-        //max-height: 0;
-        //font-size: 0;
-        //line-height: 0;
-        //transition: 0.25s ease;
-      }
-
-      .read-more-state:checked ~ .read-more-wrap .read-more-target {
-        display: inherit;
-
-        //opacity: 1;
-        //visibility: visible;
-        //font-size: inherit;
-        //line-height: inherit;
-        //max-height: 999em;
-      }
-
-      .read-more-state ~ .read-more-trigger::before {
-        content: attr(data-show-more-label);
-      }
-
-      .read-more-state:checked ~ .read-more-trigger::before {
-        content: attr(data-show-less-label);
+        display: block;
       }
 
       .read-more-trigger {
-        cursor: pointer;
-        color: map.get($theme, 'accent-color');
+        display: none;
       }
 
-      @include breakpoints.from(xs) {
-        .name,
-        .description,
-        .responsibilities,
-        .technologies {
-          margin-bottom: 8px;
-        }
-      }
-
-      @include breakpoints.from(sm) {
-        .name,
-        .description,
-        .responsibilities,
-        .technologies {
-          margin-bottom: 10px;
+      .read-more-wrap {
+        div {
+          break-inside: avoid;
+          page-break-inside: avoid;
         }
       }
     }

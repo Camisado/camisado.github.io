@@ -15,9 +15,9 @@
 </section>
 
 <style lang="scss">
-  @use "@/styles/global";
+  @use "@/styles/mixins";
 
   section.technical-skills {
-    @include global.description-list();
+    @include mixins.description-list();
   }
 </style>
