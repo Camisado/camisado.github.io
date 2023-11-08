@@ -52,6 +52,8 @@
           "description": [
             "React.js",
             "Redux",
+            "React-query",
+            "React-router",
             "Angular",
             "Vue.js",
             "Svelte",
@@ -59,10 +61,10 @@
             "Node.js",
             "Express",
             "Sass/Less",
+            "Ant.Design",
             "Material UI",
             "Bootstrap",
             "Foundation",
-            "Ant.Design",
             "Flexbox",
             "Jest",
             "Testing library",
@@ -86,6 +88,7 @@
           "description": [
             "Webpack",
             "Vite",
+            "Nx",
             "NPM/Yarn"
           ]
         },
@@ -134,6 +137,59 @@
         "position": "Lead frontend developer",
         "projects": [
           {
+            "name": "Private intranet portal for international financial center",
+            "description": [
+              "The portal serves as a centralized digital microfrontend platform where employees can access various internal resources.",
+              "It includes features like document repositories, company news and announcements, inbox, correspondence, calendars, requests, approvals and other e-services.",
+              "All designed to enhance internal communication and streamline day-to-day operations within the company"
+            ],
+            "responsibilities": [
+              "Develop architecture of the platform",
+              "Create ui-kit library",
+              "Implementing new features",
+              "Maintenance for stable work",
+              "Keep apps with good performance",
+              "Scalability and refactoring",
+              "Bugfix",
+              "Team management",
+              "Frontend tech leading"
+            ],
+            "technologies": [
+              "ReactJS",
+              "React-query",
+              "TypeScript",
+              "Ant.Design",
+              "Azure MSAL",
+              "Microsoft Graph",
+              "Sharepoint",
+              "Module federation",
+              "Nx",
+              "3rd-party libraries"
+            ]
+          },
+          {
+            "name": "Website for medical molecular diagnostics company",
+            "description": [
+              "This website is primarily used for providing information about products and solutions in the field of molecular diagnostics, as well as offering resources for healthcare professionals, researchers, and the general public interested in their technology and services."
+            ],
+            "responsibilities": [
+              "Create ui-kit library",
+              "Implementing new features",
+              "Maintenance for stable work",
+              "Keep apps with good performance",
+              "Scalability and refactoring",
+              "Bugfix",
+              "Team management"
+            ],
+            "technologies": [
+              "Vue.js",
+              "Vuex",
+              "TypeScript",
+              "AEM",
+              "3rd-party libraries"
+            ]
+          },
+          {
             "name": "Customer Success Platform - Thomson Reuters",
             "description": [
               "The Customer Experience Platform is a react-based single page application with a Redux store that provides customers with a My Account experience.",
@@ -146,7 +202,8 @@
               "Preparation codebase for a following rework",
               "Scalability and refactoring",
               "Unit, integration testing",
-              "Bugfix"
+              "Bugfix",
+              "Team management"
             ],
             "technologies": [
               "ReactJS",
